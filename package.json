@@ -1,0 +1,35 @@
+{
+  "name": "percyscript-demo",
+  "version": "1.0.0",
+  "description": "This is a demo project that introduces beginners on how to perform visual testing using [Percy](https://percy.io).",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandiqa/percyscript-demo.git"
+  },
+  "keywords": [],
+  "author": "Michael Wanyoike",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandiqa/percyscript-demo/issues"
+  },
+  "homepage": "https://github.com/brandiqa/percyscript-demo#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.1.2",
+    "jquery": "^3.4.1",
+    "semantic-ui-calendar": "0.0.8",
+    "semantic-ui-css": "^2.4.1",
+    "vanilla-router": "^1.2.7"
+  }
+}

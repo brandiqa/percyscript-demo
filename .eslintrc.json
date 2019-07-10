@@ -1,0 +1,15 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+        "linebreak-style": 0
+    },
+    "env":{
+        "browser": true,
+        "jquery": true
+    },
+    "globals": {
+      "Router": false,
+      "axios": false,
+      "Handlebars": false
+    }
+}
