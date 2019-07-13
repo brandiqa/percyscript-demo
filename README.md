@@ -28,6 +28,7 @@ FIXER_API_KEY=<insert api access key from fixer here>
 CONVERTER_API_KEY=<insert api access key from Currency Converter here>
 PORT=3000
 TIMEOUT=5000
+SYMBOLS=EUR,USD,GBP,AUD,BTC,KES,JPY,CNY
 ```
 
 ### Step 3: Install Dependencies and Run Project
