@@ -1,7 +1,11 @@
 const PercyScript = require('@percy/script');
 
 PercyScript.run(async (page, percySnapshot) => {
-    // Test Home Page
+    /**
+    |---------------------------------------|
+    | Generate Daily Rates Snaphsot         |
+    |---------------------------------------|
+    **/
     await page.goto('http://localhost:3000/');
     // wait for AJAX call to complete
     await page.waitForSelector('.loading', {
@@ -9,7 +13,11 @@ PercyScript.run(async (page, percySnapshot) => {
     });
     await percySnapshot('homepage');
 
-    // Test Currency Conversion
+    /**
+    |---------------------------------------|
+    | Generate Exchange Rate Snaphsot       |
+    |---------------------------------------|
+    **/
     await page.goto('http://localhost:3000/exchange');
     // Wait for AJAX call to complete
     await page.waitForSelector('.loading', {
@@ -25,7 +33,11 @@ PercyScript.run(async (page, percySnapshot) => {
     });
     await percySnapshot('exchange');
 
-    // Test Historical Rates
+    /**
+    |---------------------------------------|
+    | Generate Historical Rates Snaphsot    |
+    |---------------------------------------|
+    **/
     await page.goto('http://localhost:3000/historical');
     // wait for AJAX call to complete
     await page.waitForSelector('.loading', {
