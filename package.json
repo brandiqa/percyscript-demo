@@ -8,8 +8,11 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "node_modules\\.bin\\cypress open",
-    "percy": "percy exec -- cypress run"
+    "test": "cypress open",
+    "percy": "percy exec -- cypress run",
+    "cy:run": "cypress run",
+    "silly": "concurrently -k \"npm start\" \"node silly.js\"",
+    "ci:run": "concurrently -k \"node server.js\" \"cypress run\""
   },
   "repository": {
     "type": "git",
@@ -36,6 +39,7 @@
   "devDependencies": {
     "@percy/cypress": "^1.0.9",
     "@percy/script": "^1.0.0",
+    "concurrently": "^4.1.1",
     "cypress": "^3.4.0"
   }
 }
