@@ -1,4 +1,4 @@
-const PercyScript = require('@percy/script');
+/*const PercyScript = require('@percy/script');
 
 const mockRates = {
   "success": true,
@@ -22,8 +22,7 @@ const mockConvertRate = {
 }
 
 PercyScript.run(async (page, percySnapshot) => {
-    //Mock Page Requests   
-
+  //Mock Page Requests   
   //Activate request interception
   await page.setRequestInterception(true);
   // Listen to each page request
@@ -47,4 +46,4 @@ PercyScript.run(async (page, percySnapshot) => {
       request.continue();
     }
   });
-})
+})*/
